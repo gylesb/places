@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places You've been</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>The places you've been</h1>
+      </div>
+      <div class="col-md-6">
+        <div class="well">
+          <blockquote>
+            <h2>Oh, the places you'll go...</h2>
+            <footer>Dr. Seuss</footer>
+          </blockquote>
+        </div>
+        <h2>Add somewhere you've been other than Washington:</h2>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="place">Where did you go?</label>
+            <input type="text" name="place" class="form-control" id="place">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="time">When did you go there?</label>
+            <input type="text" name="time" class="form-control" id="time">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="reason">Who did you go with?</label>
+            <input type="text" name="who" class="form-control" id="who">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="how">How did you get there?</label>
+            <input type="text" name="how" class="form-control" id="how">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="why">Why did you go there?</label>
+            <input type="text" name="why" class="form-control" id="why">
+          </div>
+          <button type="submit" class="btn btn-success">Enter your info!</button>
+        </form>
+        <br>
+        <h2>List of places:</h2>
+        <ul id="places">
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-places">
+          <h2></h2>
+          <br>
+          <p>Where you went: <span class="where"></span></p>
+          <p>When you went: <span class="when"></span></p>
+          <p>Who you went with: <span class="who"></span></p>
+          <p>How you go there: <span class="how"></span></p>
+          <p>Why you went there: <span class="why"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
